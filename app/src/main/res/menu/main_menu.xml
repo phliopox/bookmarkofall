@@ -6,7 +6,7 @@
         android:title="book"/>
 
     <item
-        android:id="@+id/action_empty"
+        android:id="@+id/navigation_book_mark"
         android:title=""
         android:enabled="false"
         android:checkable="false"/>

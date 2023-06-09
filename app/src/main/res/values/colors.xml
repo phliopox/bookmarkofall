@@ -11,4 +11,7 @@
     <color name="apricot">#fbf1ef</color>
     <color name="apricot_dark">#fd8c76</color>
     <color name="apricot_white">#fedcd5</color>
+
+    <color name="yello">#ffb74e</color>
+    <color name="yello_white">#ffdba6</color>
 </resources>
