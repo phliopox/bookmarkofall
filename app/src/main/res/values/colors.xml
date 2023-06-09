@@ -14,4 +14,11 @@
 
     <color name="yello">#ffb74e</color>
     <color name="yello_white">#ffdba6</color>
+
+    <color name="text_color">#222</color>
+    <color name="cloudy">#DDDDDD</color>
+    <color name="cloudy_dark">#9E9E9E</color>
+    <color name="cloudy_more_dark">#5C5C5C</color>
+
+
 </resources>
