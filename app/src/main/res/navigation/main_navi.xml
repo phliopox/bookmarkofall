@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navi"
+    app:startDestination="@id/navigation_book_mark">
+
+    <fragment
+        android:id="@+id/navigation_book"
+        android:name="com.ph.bookmarkofall.ui.BookFragment"
+        android:label="BookFragment" />
+    <fragment
+        android:id="@+id/navigation_book_mark"
+        android:name="com.ph.bookmarkofall.ui.BookmarkMainFragment"
+        android:label="BookmarkMainFragment" />
+    <fragment
+        android:id="@+id/navigation_my_page"
+        android:name="com.ph.bookmarkofall.ui.MyPageFragment"
+        android:label="MyPageFragment" />
+</navigation>
