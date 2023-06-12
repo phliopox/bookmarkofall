@@ -10,5 +10,12 @@
         <item name="android:textSize">9sp</item>
         <item name="android:gravity">center</item>
     </style>
-
+    <style name="monte" >
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+    <style name="monte_9sp" parent="monte">
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">@color/cloudy_more_dark</item>
+    </style>
 </resources>
