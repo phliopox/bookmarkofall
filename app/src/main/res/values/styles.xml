@@ -18,4 +18,8 @@
         <item name="android:textSize">9sp</item>
         <item name="android:textColor">@color/cloudy_more_dark</item>
     </style>
+
+    <style name="DialogSlideUpAnimation">
+        <item name="android:windowExitAnimation">@anim/slide_up</item>
+    </style>
 </resources>
