@@ -2,18 +2,10 @@ package com.ph.bookmarkofall
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.MotionEvent
-import androidx.fragment.app.DialogFragment
-import androidx.navigation.NavController
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.ph.bookmarkofall.data.common.TAG
-import com.ph.bookmarkofall.ui.GuideDialogFragment
 
 class MainActivity : AppCompatActivity() {
 

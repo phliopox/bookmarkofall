@@ -1,4 +1,4 @@
-package com.ph.bookmarkofall.ui
+package com.ph.bookmarkofall.ui.bookmarkMain
 
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable

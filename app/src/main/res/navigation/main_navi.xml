@@ -10,7 +10,7 @@
         android:label="BookFragment" />
     <fragment
         android:id="@+id/navigation_book_mark"
-        android:name="com.ph.bookmarkofall.ui.BookmarkMainFragment"
+        android:name="com.ph.bookmarkofall.ui.bookmarkMain.BookmarkMainFragment"
         android:label="BookmarkMainFragment" />
     <fragment
         android:id="@+id/navigation_my_page"
