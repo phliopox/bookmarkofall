@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_sharp_bookmark_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/guide_title"
+        style="@style/monte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="내가 여행한 책의\n남기고 싶은 구절을\n기록하세요"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+    <!--    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="우리는 쉽게 잊어 버리고,\n서로 다른 것을 마음에 담습니다.\n나의 북마크와 다른 이의 북마크를 함께 담아요!"
+            android:textSize="9sp"
+            style="@style/monte_9sp"
+            app:layout_constraintTop_toBottomOf="@id/guide_title"
+            app:layout_constraintStart_toStartOf="@id/guide_title"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/cloudy_more_dark"
+            />-->
+    <TextView
+        android:id="@+id/slide_guide_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="화면을 터치하여 모두의 북마크를 즐기세요!"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/mark_1"
+        style="@style/bookmark_text"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@drawable/bg_white_radi_right"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:text="세상의 모든 전문가는\n내가 모르는 분야에 대해 말 할 때까지만 전문가로 보인다"
+        android:textColor="@color/cloudy_more_dark"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <TextView
+        android:id="@+id/mark_2"
+        style="@style/bookmark_text"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@drawable/bg_white_radi_20"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:text="무서운건 악이 아니오\n시간이지.\n아무도 그걸 이길수가 없거든"
+        android:textColor="@color/text_color"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <TextView
+        android:id="@+id/mark_3"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@drawable/bg_white_radi_left"
+        app:layout_constraintWidth_percent="0.03" />
+
+    <TextView
+        android:id="@+id/mark_4"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_white_radi_right"
+        app:layout_constraintWidth_percent="0.07" />
+
+    <TextView
+        android:id="@+id/mark_5"
+        style="@style/bookmark_text"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_white_radi_20"
+        android:text="한 권의 책을 읽음으로\n자신의 삶에서 새 시대를 본 사람이 너무 많다"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.6"
+
+        />
+
+    <TextView
+        android:id="@+id/mark_6"
+        style="@style/bookmark_text"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_white_radi_left"
+        android:gravity="end|center_vertical"
+        android:paddingEnd="3dp"
+        android:text="행복은\n빼"
+        android:textColor="@color/cloudy_more_dark"
+        app:layout_constraintWidth_percent="0.2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/mark_7"
+        style="@style/bookmark_text"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@drawable/bg_white_radi_20"
+        android:text="인생은 당신에게 주어진\n 오직 한 번 뿐인 여행이다"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.4"
+
+        />
+
+    <TextView
+        android:id="@+id/mark_8"
+        style="@style/bookmark_text"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@drawable/bg_white_radi_20"
+        android:text="혼돈을 오랫동안 들여다보고\n있으면 혼돈이 당신을 쳐다본다."
+        android:textColor="@color/text_color"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.5"
+
+        />
+
+    <TextView
+        android:id="@+id/mark_9"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintWidth_percent="0.02" />
+
+    <TextView
+        android:id="@+id/mark_10"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_white_radi_right"
+        app:layout_constraintWidth_percent="0.07" />
+
+    <TextView
+        android:id="@+id/mark_11"
+        style="@style/bookmark_text"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_white_radi_20"
+        android:text="경험은 바보에게도 가장 좋은 학교이고\n필요는 발명을 낳는 법이다"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <TextView
+        android:id="@+id/mark_12"
+        style="@style/bookmark_text"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_white_radi_left"
+        android:gravity="end|center_vertical"
+        android:paddingEnd="3dp"
+        android:text="침묵이\n할"
+        android:textColor="@color/cloudy_more_dark"
+        app:layout_constraintWidth_percent="0.2"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/KeyPadFlow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:constraint_referenced_ids="mark_1,mark_2,mark_3,mark_4,mark_5,
+        mark_6,mark_7,mark_8,mark_9,mark_10,mark_11,mark_12"
+        app:flow_maxElementsWrap="3"
+        app:flow_verticalGap="10dp"
+        app:flow_wrapMode="chain"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintTop_toTopOf="@id/guideline"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -34,11 +34,13 @@ class BookmarkMainFragment : Fragment() {
         runBlocking {
             launch {
                 if(userPref.firstActivate.first().isNullOrEmpty()){
-                    val dialog = SwipeDismissDialogFragment.newInstance()
+                    val dialog = GuideDialogFragment()
                     dialog.show(parentFragmentManager, "swipe_dismiss_dialog")
                     // userPref.isNotFirstActivate()  //테스트를 위해 계속 띄우려고 지워둠 !
                 }
             }
         }
     }
+
+
 }
