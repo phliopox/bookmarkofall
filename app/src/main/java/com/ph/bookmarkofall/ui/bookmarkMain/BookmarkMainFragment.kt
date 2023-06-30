@@ -5,17 +5,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import com.ph.bookmarkofall.R
 import com.ph.bookmarkofall.data.common.PreferenceManager
 import com.ph.bookmarkofall.databinding.FragmentBookmarkBinding
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
+@AndroidEntryPoint
 class BookmarkMainFragment : Fragment() {
     private lateinit var binding : FragmentBookmarkBinding
     private lateinit var userPref : PreferenceManager
+    private val viewModel : BookMarkViewModel by viewModels()
     private val bookmarkCardAdapter = BookMarkCardAdapter()
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -29,17 +34,8 @@ class BookmarkMainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //앱 최초 실행시 gender 선택 다이얼로그 띄우기
-        userPref = PreferenceManager(requireContext().applicationContext)
-        runBlocking {
-            launch {
-                if(userPref.firstActivate.first().isNullOrEmpty()){
-                    val dialog = GuideDialogFragment()
-                    dialog.show(parentFragmentManager, "swipe_dismiss_dialog")
-                    userPref.isNotFirstActivate()  //테스트를 위해 계속 띄우려고 지워둠 !
-                }
-            }
-        }
+        //앱 최초 실행시 guide dialog 띄우기 (터치시 dismiss)
+        showGuideDialog()
 
         with(binding.todayBookMarks){
             adapter = bookmarkCardAdapter
@@ -54,8 +50,27 @@ class BookmarkMainFragment : Fragment() {
             }
             offscreenPageLimit = 3
         }
+    //TODO tablayout 필요한듯 !
 
+        viewModel.bookMarks.observe(viewLifecycleOwner){ bookmarks->
+            bookmarks?.let {
+                bookmarkCardAdapter.submitList(it)
+            }
+        }
 
+    }
+
+    private fun showGuideDialog() {
+        userPref = PreferenceManager(requireContext().applicationContext)
+        runBlocking {
+            launch {
+                if (userPref.firstActivate.first().isNullOrEmpty()) {
+                    val dialog = GuideDialogFragment()
+                    dialog.show(parentFragmentManager, "swipe_dismiss_dialog")
+                    userPref.isNotFirstActivate()  //테스트를 위해 계속 띄우려고 지워둠 !
+                }
+            }
+        }
     }
 
 

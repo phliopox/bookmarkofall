@@ -4,9 +4,10 @@ import com.ph.bookmarkofall.data.common.BASE_WEB_URL
 import okhttp3.*
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import javax.inject.Inject
 
 
-class RemoteDataSource{
+class RemoteDataSource @Inject constructor(){
     private fun providesHostingWebUrl() = BASE_WEB_URL
 
     private fun provideOkHttpClient(): OkHttpClient {

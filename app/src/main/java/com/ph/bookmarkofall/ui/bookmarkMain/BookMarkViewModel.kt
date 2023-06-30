@@ -13,12 +13,14 @@ import javax.inject.Inject
 @HiltViewModel
 class BookMarkViewModel @Inject constructor(private val bookMarksRepository: BookMarksRepository) : ViewModel(){
 
-    private val _bookMarkers : MutableLiveData<List<BookmarkCard>> = MutableLiveData()
-    val bookMarkers : LiveData<List<BookmarkCard>> = _bookMarkers
-
-    suspend fun getBookMarkers(){
+    private val _bookMarks : MutableLiveData<List<BookmarkCard>> = MutableLiveData()
+    val bookMarks : LiveData<List<BookmarkCard>> = _bookMarks
+    init {
+        getBookMarkers()
+    }
+    private fun getBookMarkers(){
         viewModelScope.launch {
-            _bookMarkers.value = bookMarksRepository.getBookMarks()
+            _bookMarks.value = bookMarksRepository.getBookMarks()
         }
     }
 }

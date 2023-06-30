@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     >
-    //android:background="#FAECEA"
+    <!--android:background="#FAECEA"-->
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/frag_container"
         android:name="androidx.navigation.fragment.NavHostFragment"

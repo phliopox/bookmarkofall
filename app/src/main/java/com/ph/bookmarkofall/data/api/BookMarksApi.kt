@@ -5,6 +5,6 @@ import retrofit2.http.GET
 
 interface BookMarksApi {
 
-    @GET("bookmarks")
+    @GET("bookmarks.json")
     suspend fun getBookMarks() : List<BookmarkCard>
 }
