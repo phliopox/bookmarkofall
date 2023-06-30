@@ -1,4 +1,4 @@
-package com.lf.fashion.data.network
+package com.ph.bookmarkofall.data.network
 
 import android.util.Log
 import kotlinx.coroutines.Dispatchers

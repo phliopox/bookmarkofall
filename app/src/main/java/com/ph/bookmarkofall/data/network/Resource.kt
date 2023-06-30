@@ -1,4 +1,4 @@
-package com.lf.fashion.data.network
+package com.ph.bookmarkofall.data.network
 
 import okhttp3.ResponseBody
 
