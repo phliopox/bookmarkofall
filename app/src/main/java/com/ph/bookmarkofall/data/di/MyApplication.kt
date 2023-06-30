@@ -5,9 +5,9 @@ import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
 class MyApplication :Application(){
-    override fun onCreate() {
+/*    override fun onCreate() {
         super.onCreate()
-       /* var keyHash = Utility.getKeyHash(this)
-        Log.d(TAG, "MyApplication - onCreate: $keyHash");*/
-    }
+       *//* var keyHash = Utility.getKeyHash(this)
+        Log.d(TAG, "MyApplication - onCreate: $keyHash");*//*
+    }*/
 }
